@@ -24,13 +24,13 @@ public class ContactCreationTests extends TestBase {
 //returnToContactsPage();
 
     Assert.assertEquals(afterList.size(), beforeList.size()+1);
-    int max = 0;
-    for(ContactData c  : afterList){
-      if(c.getId()>max){
-        max = c.getId();
-      }
-      contact.setId(max);
-    }
+ //  int max = 0;
+//    for(ContactData c  : afterList){
+//      if(c.getId()>max){
+//        max = c.getId();
+//      }
+      contact.setId(afterList.stream().max((o1, o2) -> Integer.compare(o1.getId(), o2.getId())).get().getId());
+
     beforeList.add(contact);
     Assert.assertEquals(new HashSet<>(afterList),new HashSet<>(beforeList));
   }

@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0cb92820-0f8d-4fc6-8881-baaa858b8206" name="Default" comment="" />
+    <list default="true" id="0cb92820-0f8d-4fc6-8881-baaa858b8206" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/web-tests/src/test/java/model/GroupData.java" afterPath="$PROJECT_DIR$/web-tests/src/test/java/model/GroupData.java" />
+      <change beforePath="$PROJECT_DIR$/web-tests/src/test/java/tests/ContactCreationTests.java" afterPath="$PROJECT_DIR$/web-tests/src/test/java/tests/ContactCreationTests.java" />
+      <change beforePath="$PROJECT_DIR$/web-tests/src/test/java/tests/GroupCreationTests.java" afterPath="$PROJECT_DIR$/web-tests/src/test/java/tests/GroupCreationTests.java" />
+      <change beforePath="$PROJECT_DIR$/web-tests/src/test/java/tests/GroupModificationTests.java" afterPath="$PROJECT_DIR$/web-tests/src/test/java/tests/GroupModificationTests.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/web-tests/.gradle/" />
     <ignored path="$PROJECT_DIR$/web-tests/build/" />
     <ignored path="$PROJECT_DIR$/web-tests/out/" />
@@ -97,23 +102,23 @@
       <file leaf-file-name="GroupData.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web-tests/src/test/java/model/GroupData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="62" column="23" lean-forward="true" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="23" />
+            <state relative-caret-position="462">
+              <caret line="32" column="35" lean-forward="false" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
               <folding>
-                <element signature="e#1173#1174#0" expanded="true" />
-                <element signature="e#1193#1194#0" expanded="true" />
+                <element signature="e#1151#1152#0" expanded="true" />
+                <element signature="e#1171#1172#0" expanded="true" />
+                <element signature="e#1202#1203#0" expanded="true" />
                 <element signature="e#1224#1225#0" expanded="true" />
-                <element signature="e#1246#1247#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GroupModificationTests.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GroupModificationTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web-tests/src/test/java/tests/GroupModificationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="46" column="29" lean-forward="false" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+            <state relative-caret-position="242">
+              <caret line="49" column="21" lean-forward="true" selection-start-line="47" selection-start-column="4" selection-end-line="49" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -131,11 +136,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GroupCreationTests.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GroupCreationTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web-tests/src/test/java/tests/GroupCreationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+            <state relative-caret-position="700">
+              <caret line="40" column="6" lean-forward="false" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -146,8 +151,8 @@
       <file leaf-file-name="ContactCreationTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web-tests/src/test/java/tests/ContactCreationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="34" column="74" lean-forward="false" selection-start-line="34" selection-start-column="74" selection-end-line="34" selection-end-column="74" />
+            <state relative-caret-position="172">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -768,13 +773,13 @@
         <option value="$PROJECT_DIR$/web-tests/src/test/java/tests/GroupDeletionTests.java" />
         <option value="$PROJECT_DIR$/web-tests/src/test/java/tests/ContactDeletionTests.java" />
         <option value="$PROJECT_DIR$/web-tests/src/test/java/manager/GroupHelper.java" />
-        <option value="$PROJECT_DIR$/web-tests/src/test/java/tests/GroupModificationTests.java" />
         <option value="$PROJECT_DIR$/web-tests/src/test/java/manager/ContactHelper.java" />
-        <option value="$PROJECT_DIR$/web-tests/src/test/java/model/GroupData.java" />
-        <option value="$PROJECT_DIR$/web-tests/src/test/java/tests/GroupCreationTests.java" />
         <option value="$PROJECT_DIR$/web-tests/src/test/java/model/ContactData.java" />
-        <option value="$PROJECT_DIR$/web-tests/src/test/java/tests/ContactCreationTests.java" />
         <option value="$PROJECT_DIR$/web-tests/src/test/java/tests/ContactModificationTests.java" />
+        <option value="$PROJECT_DIR$/web-tests/src/test/java/tests/ContactCreationTests.java" />
+        <option value="$PROJECT_DIR$/web-tests/src/test/java/tests/GroupModificationTests.java" />
+        <option value="$PROJECT_DIR$/web-tests/src/test/java/tests/GroupCreationTests.java" />
+        <option value="$PROJECT_DIR$/web-tests/src/test/java/model/GroupData.java" />
       </list>
     </option>
   </component>
@@ -927,7 +932,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.ContactCreationTests.createContactTest">
+  <component name="RunManager" selected="TestNG.GroupCreationTests.GroupCreationTests">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1178,10 +1183,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.ContactCreationTests.createContactTest" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.GroupCreationTests.GroupCreationTests" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.ContactModificationTests.testModifyContact" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.GroupModificationTests.modifyGroupByIndex" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.GroupCreationTests.GroupCreationTests" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.GroupModificationTests.modifyGroupByIndex" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.ContactCreationTests.createContactTest" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.ContactModificationTests.testModifyContact" />
         <item index="4" class="java.lang.String" itemvalue="TestNG.ContactDeletionTests.deleteContactTest" />
       </list>
     </recent_temporary>
@@ -1206,8 +1211,8 @@
     <history-entry file="ContactCreationTests_createContactTest - 2019.04.19 at 13h 41m 39s.xml">
       <configuration name="ContactCreationTests.createContactTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ContactModificationTests_testModifyContact - 2019.04.17 at 18h 43m 14s.xml">
-      <configuration name="ContactModificationTests.testModifyContact" configurationId="TestNG" />
+    <history-entry file="ContactCreationTests_createContactTest - 2019.04.19 at 14h 04m 59s.xml">
+      <configuration name="ContactCreationTests.createContactTest" configurationId="TestNG" />
     </history-entry>
     <history-entry file="ContactModificationTests_testModifyContact - 2019.04.19 at 13h 21m 07s.xml">
       <configuration name="ContactModificationTests.testModifyContact" configurationId="TestNG" />
@@ -1218,19 +1223,19 @@
     <history-entry file="GroupCreationTests_GroupCreationTests - 2019.04.19 at 13h 38m 54s.xml">
       <configuration name="GroupCreationTests.GroupCreationTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="GroupModificationTests_modifyGroupByIndex - 2019.04.17 at 18h 24m 48s.xml">
-      <configuration name="GroupModificationTests.modifyGroupByIndex" configurationId="TestNG" />
+    <history-entry file="GroupCreationTests_GroupCreationTests - 2019.04.19 at 13h 54m 23s.xml">
+      <configuration name="GroupCreationTests.GroupCreationTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="GroupModificationTests_modifyGroupByIndex - 2019.04.17 at 18h 26m 01s.xml">
-      <configuration name="GroupModificationTests.modifyGroupByIndex" configurationId="TestNG" />
+    <history-entry file="GroupCreationTests_GroupCreationTests - 2019.04.19 at 13h 59m 10s.xml">
+      <configuration name="GroupCreationTests.GroupCreationTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="GroupModificationTests_modifyGroupByIndex - 2019.04.17 at 18h 27m 19s.xml">
-      <configuration name="GroupModificationTests.modifyGroupByIndex" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="GroupModificationTests_modifyGroupByIndex - 2019.04.17 at 18h 27m 58s.xml">
-      <configuration name="GroupModificationTests.modifyGroupByIndex" configurationId="TestNG" />
+    <history-entry file="GroupCreationTests_GroupCreationTests - 2019.04.19 at 14h 19m 32s.xml">
+      <configuration name="GroupCreationTests.GroupCreationTests" configurationId="TestNG" />
     </history-entry>
     <history-entry file="GroupModificationTests_modifyGroupByIndex - 2019.04.19 at 13h 20m 16s.xml">
+      <configuration name="GroupModificationTests.modifyGroupByIndex" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="GroupModificationTests_modifyGroupByIndex - 2019.04.19 at 14h 13m 25s.xml">
       <configuration name="GroupModificationTests.modifyGroupByIndex" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -1341,10 +1346,10 @@
         <state relative-caret-position="440">
           <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
           <folding>
-            <element signature="e#1173#1174#0" expanded="true" />
-            <element signature="e#1193#1194#0" expanded="true" />
+            <element signature="e#1151#1152#0" expanded="true" />
+            <element signature="e#1171#1172#0" expanded="true" />
+            <element signature="e#1202#1203#0" expanded="true" />
             <element signature="e#1224#1225#0" expanded="true" />
-            <element signature="e#1246#1247#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1663,19 +1668,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web-tests/src/test/java/model/GroupData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="62" column="23" lean-forward="true" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="23" />
-          <folding>
-            <element signature="e#1173#1174#0" expanded="true" />
-            <element signature="e#1193#1194#0" expanded="true" />
-            <element signature="e#1224#1225#0" expanded="true" />
-            <element signature="e#1246#1247#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web-tests/src/test/java/model/ContactData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
@@ -1685,16 +1677,6 @@
             <element signature="e#1639#1640#0" expanded="true" />
             <element signature="e#1670#1671#0" expanded="true" />
             <element signature="e#1692#1693#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-tests/src/test/java/tests/ContactCreationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="34" column="74" lean-forward="false" selection-start-line="34" selection-start-column="74" selection-end-line="34" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1715,16 +1697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web-tests/src/test/java/tests/GroupCreationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web-tests/src/test/java/tests/GroupDeletionTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -1735,11 +1707,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web-tests/src/test/java/tests/ContactCreationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web-tests/src/test/java/tests/GroupModificationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="46" column="29" lean-forward="false" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+        <state relative-caret-position="242">
+          <caret line="49" column="21" lean-forward="true" selection-start-line="47" selection-start-column="4" selection-end-line="49" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-tests/src/test/java/model/GroupData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="32" column="35" lean-forward="false" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+          <folding>
+            <element signature="e#1151#1152#0" expanded="true" />
+            <element signature="e#1171#1172#0" expanded="true" />
+            <element signature="e#1202#1203#0" expanded="true" />
+            <element signature="e#1224#1225#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-tests/src/test/java/tests/GroupCreationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="40" column="6" lean-forward="false" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
