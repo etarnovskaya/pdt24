@@ -17,11 +17,11 @@ public class ContactModificationTests extends  TestBase {
     }
   }
 
-  @Test
+  @Test(enabled = false)
   public void testModifyContact(){
     List<ContactData> before = app.getContactHelper().getContactList();
     app.getContactHelper().initContactModification();
-    ContactData contact = new ContactData(before.get(0).getId(), "", "","","", null);
+    ContactData contact = new ContactData().withId(before.get(0).getId());
     app.getContactHelper().fillContactForm(contact, false);
     app.getContactHelper().submitContactModification();
     List<ContactData> after = app.getContactHelper().getContactList();

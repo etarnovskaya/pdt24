@@ -16,7 +16,7 @@ public class ContactDeletionTests extends TestBase {
     }
   }
 
-  @Test
+  @Test(enabled = false)
   public void deleteContactTest() {
 
     // int before = app.getContactHelper().getContactCount();

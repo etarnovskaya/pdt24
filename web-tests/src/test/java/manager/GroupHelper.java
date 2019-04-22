@@ -76,17 +76,32 @@ click(By.cssSelector("[name=delete]"));
    wd.findElements(By.cssSelector("[name='selected[]']")).get(i).click();
   }
 
-  public List<GroupData> getGroupList() {
+  public List<GroupData> list() {
     List<GroupData> groups = new ArrayList<>();
     List<WebElement> elements= wd.findElements(By.cssSelector("span.group"));
     for( WebElement e : elements ){
       String groupName =  e.getText();
       int id = Integer.parseInt(e.findElement(By.tagName("input")).getAttribute("value"));
-      GroupData group = new GroupData(id, groupName, null, null);
+      GroupData group = new GroupData().withId(id).withName(groupName);
       groups.add(group);
     }
 
     return groups;
  }
+
+  public void modifyGroup(GroupData group, int index) {
+    selectGroupByIndex(index);
+
+    initGroupModification();
+    fillGroupForm(group);
+    submitGroupModidfication();
+    returnToGroupsPage();
+  }
+
+  public void create(GroupData group) {
+    fillGroupForm(group);
+    confirmGroupCreation();
+    returnToGroupsPage();
+  }
 }
 

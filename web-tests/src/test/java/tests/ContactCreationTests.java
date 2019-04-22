@@ -9,14 +9,14 @@ import java.util.HashSet;
 import java.util.List;
 
 public class ContactCreationTests extends TestBase {
-  @Test
+  @Test(enabled = false)
   public void createContactTest() {
     app.getContactHelper().openContactsPage();
    // int before = app.getContactHelper().getContactCount();
     List<ContactData> beforeList = app.getContactHelper().getContactList();
 
     app.getContactHelper().initContactCreation();
-    ContactData contact = new ContactData(beforeList.get(0).getId(),"a", "b", "c", "d", "a");
+    ContactData contact = new ContactData().withId(beforeList.get(0).getId()).withfName("a").withlName("b").withhPhone("1111111");
     app.getContactHelper().fillContactForm(contact, true);
     app.getContactHelper().submitContactCreation();
     int after = app.getContactHelper().getContactCount();
@@ -29,7 +29,7 @@ public class ContactCreationTests extends TestBase {
 //      if(c.getId()>max){
 //        max = c.getId();
 //      }
-      contact.setId(afterList.stream().max((o1, o2) -> Integer.compare(o1.getId(), o2.getId())).get().getId());
+      contact.withId(afterList.stream().max((o1, o2) -> Integer.compare(o1.getId(), o2.getId())).get().getId());
 
     beforeList.add(contact);
     Assert.assertEquals(new HashSet<>(afterList),new HashSet<>(beforeList));
