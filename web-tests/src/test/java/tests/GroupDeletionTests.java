@@ -1,11 +1,15 @@
 package tests;
 
 import model.GroupData;
+import model.Groups;
+import org.hamcrest.CoreMatchers;
+import org.hamcrest.MatcherAssert;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.util.List;
+import java.util.Set;
 
 public class GroupDeletionTests extends TestBase {
   @BeforeMethod
@@ -51,5 +55,45 @@ public class GroupDeletionTests extends TestBase {
 
     Assert.assertEquals(after, before);
   }
+
+  @Test
+  public void deleteTestCeche(){
+    List<GroupData> before = app.getGroupHelper().list();
+    //int before= app.getGroupHelper().getGroupCount();
+    app.getGroupHelper().selectGroupByIndex(before.size()-1);
+    app.getGroupHelper().submitGroupDeletion();
+    app.getGroupHelper().returnToGroupsPage();
+    List<GroupData> after = app.getGroupHelper().list();
+    before.remove(before.size()-1);
+
+    Assert.assertEquals(after, before);
+  }
+
+  @Test
+  public void deleteTestListCompareSet(){
+    Set<GroupData> before = app.getGroupHelper().all();
+    GroupData deletedGroup = before.iterator().next();
+    //int before= app.getGroupHelper().getGroupCount();
+    app.getGroupHelper().delete(deletedGroup);
+    Set<GroupData> after = app.getGroupHelper().all();
+    before.remove(deletedGroup);
+
+    Assert.assertEquals(after, before);
+  }
+
+  @Test(enabled = false)
+  public void deleteTestListCompareGroupsClass(){
+    Groups before = app.getGroupHelper().allset();
+    GroupData deletedGroup = before.iterator().next();
+    //int before= app.getGroupHelper().getGroupCount();
+    app.getGroupHelper().delete(deletedGroup);
+    Groups after = app.getGroupHelper().allset();
+    before.remove(deletedGroup);
+
+    Assert.assertEquals(after, before);
+    MatcherAssert.assertThat(after, CoreMatchers.equalTo(before.without(deletedGroup)));
+  }
+
+
 
 }

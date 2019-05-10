@@ -1,10 +1,10 @@
 package tests;
 
 import model.ContactData;
-import model.GroupData;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.io.File;
 import java.util.HashSet;
 import java.util.List;
 
@@ -16,7 +16,8 @@ public class ContactCreationTests extends TestBase {
     List<ContactData> beforeList = app.getContactHelper().getContactList();
 
     app.getContactHelper().initContactCreation();
-    ContactData contact = new ContactData().withId(beforeList.get(0).getId()).withfName("a").withlName("b").withhPhone("1111111");
+    File photo = new File("src/test/resources/cat_small1.png");
+    ContactData contact = new ContactData().withId(beforeList.get(0).getId()).withfName("a").withlName("b").withhPhone("1111111").withPhoto(photo);
     app.getContactHelper().fillContactForm(contact, true);
     app.getContactHelper().submitContactCreation();
     int after = app.getContactHelper().getContactCount();
@@ -33,6 +34,15 @@ public class ContactCreationTests extends TestBase {
 
     beforeList.add(contact);
     Assert.assertEquals(new HashSet<>(afterList),new HashSet<>(beforeList));
+  }
+
+  @Test(enabled = false)
+  public void testCurrentDir(){
+    File currentDir = new File(".");
+    System.out.println(currentDir.getAbsolutePath());
+    File photo = new File("src/test/resources/cat_small1.png");
+    System.out.println(photo.getAbsolutePath());
+    System.out.println(photo.exists());
   }
 
 }

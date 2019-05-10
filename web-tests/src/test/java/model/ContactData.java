@@ -1,5 +1,6 @@
 package model;
 
+import java.io.File;
 import java.util.Objects;
 
 public class ContactData {
@@ -9,7 +10,23 @@ public class ContactData {
   private  String hPhone;
   private  String mPhone;
   private String group;
+  private String wPhone;
+  private String allphones;
+  private File photo;
 
+  public File getPhoto() {
+    return photo;
+  }
+
+  public ContactData withPhoto(File photo) {
+    this.photo = photo;
+    return  this;
+  }
+
+  public String getAllphones() {
+    return allphones;
+
+  }
 
   @Override
   public String toString() {
@@ -88,5 +105,19 @@ public class ContactData {
   public ContactData withGroup(String group) {
     this.group = group;
     return this;
+  }
+
+  public ContactData withwPhone(String wPhone ) {
+    this.wPhone = wPhone;
+    return this;
+  }
+
+  public String getwPhone() {
+    return wPhone;
+  }
+
+  public ContactData withAllPhones(String allphones) {
+    this.allphones = allphones;
+    return  this;
   }
 }

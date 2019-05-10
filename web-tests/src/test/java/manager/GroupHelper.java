@@ -1,12 +1,15 @@
 package manager;
 
 import model.GroupData;
+import model.Groups;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class GroupHelper extends  HelperBase{
 
@@ -89,8 +92,62 @@ click(By.cssSelector("[name=delete]"));
     return groups;
  }
 
+  public Set<GroupData> all() {
+    Set<GroupData> groups = new HashSet<>();
+    List<WebElement> elements= wd.findElements(By.cssSelector("span.group"));
+    for( WebElement e : elements ){
+      String groupName =  e.getText();
+      int id = Integer.parseInt(e.findElement(By.tagName("input")).getAttribute("value"));
+      GroupData group = new GroupData().withId(id).withName(groupName);
+      groups.add(group);
+    }
+
+    return groups;
+  }
+
+  private Groups groupCache = null;
+
+  public Set<GroupData> allCashe() {
+    if (groupCache != null){
+      return  new Groups(groupCache);
+          }
+
+    groupCache = new Groups();
+    List<WebElement> elements= wd.findElements(By.cssSelector("span.group"));
+    for( WebElement e : elements ){
+      String groupName =  e.getText();
+      int id = Integer.parseInt(e.findElement(By.tagName("input")).getAttribute("value"));
+      GroupData group = new GroupData().withId(id).withName(groupName);
+      groupCache.add(group);
+    }
+
+    return new Groups(groupCache);
+  }
+
+  public Groups allset() {
+   Groups groups = new Groups();
+    List<WebElement> elements= wd.findElements(By.cssSelector("span.group"));
+    for( WebElement e : elements ){
+      String groupName =  e.getText();
+      int id = Integer.parseInt(e.findElement(By.tagName("input")).getAttribute("value"));
+      GroupData group = new GroupData().withId(id).withName(groupName);
+      groups.add(group);
+    }
+
+    return groups;
+  }
+
   public void modifyGroup(GroupData group, int index) {
     selectGroupByIndex(index);
+
+    initGroupModification();
+    fillGroupForm(group);
+    submitGroupModidfication();
+    returnToGroupsPage();
+  }
+
+  public void modifyGroupById(GroupData group) {
+    selectGroupById(group.getId());
 
     initGroupModification();
     fillGroupForm(group);
@@ -101,6 +158,34 @@ click(By.cssSelector("[name=delete]"));
   public void create(GroupData group) {
     fillGroupForm(group);
     confirmGroupCreation();
+    returnToGroupsPage();
+  }
+
+  public void createWithCache(GroupData group) {
+    fillGroupForm(group);
+    confirmGroupCreation();
+    groupCache = null;
+    returnToGroupsPage();
+  }
+
+
+
+  public void selectGroupById(int id) {
+    wd.findElement(By.cssSelector("input[value = '"+ id +"']")).click();
+
+
+  }
+
+  public void delete(GroupData group) {
+    selectGroupById(group.getId());
+    submitGroupDeletion();
+    returnToGroupsPage();
+  }
+
+  public void deleteWithCache(GroupData group) {
+    selectGroupById(group.getId());
+    submitGroupDeletion();
+    groupCache = null;
     returnToGroupsPage();
   }
 }

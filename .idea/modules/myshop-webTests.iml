@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="myshop-webTests" external.linked.project.path="$MODULE_DIR$/../../../etarn_qa19_home/myshop-webTests" external.root.project.path="$MODULE_DIR$/../../../etarn_qa19_home/myshop-webTests" external.system.id="GRADLE" external.system.module.group="qa19" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../etarn_qa19_home/myshop-webTests">
+      <excludeFolder url="file://$MODULE_DIR$/../../../etarn_qa19_home/myshop-webTests/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../etarn_qa19_home/myshop-webTests/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../etarn_qa19_home/myshop-webTests/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

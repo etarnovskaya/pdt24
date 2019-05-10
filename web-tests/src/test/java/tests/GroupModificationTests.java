@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 import java.util.Comparator;
 import java.util.List;
+import java.util.Set;
 
 public class GroupModificationTests extends TestBase{
   @BeforeMethod
@@ -46,6 +47,24 @@ int index = before.size()-1;
     after.sort(byId);
 
     //Assert.assertEquals(new HashSet<Object>(before) , new HashSet<>(after));
+    Assert.assertEquals(before, after);
+  }
+
+  @Test
+  public void modifyGroupSet(){
+    Set<GroupData> before = app.getGroupHelper().all();
+    //int before= app.getGroupHelper().getGroupCount();
+    GroupData modifyedGroup = before.iterator().next();
+    GroupData group = new GroupData().withId(modifyedGroup.getId()).withName("ab");
+
+    app.getGroupHelper().modifyGroupById(group);
+
+    Set<GroupData> after = app.getGroupHelper().all();
+    //int before= app.getGroupHelper().getGroupCount();
+
+    before.remove(modifyedGroup);
+    before.add(group);
+
     Assert.assertEquals(before, after);
   }
 
